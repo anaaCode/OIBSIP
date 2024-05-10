@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.18.0/js/md5.min.js"></script>
+    <script type="module" src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/d2685faf17.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login Authentication</title>
+  </head>
+  <body>
+    <nav>
+      <div class="company-det">
+        <div class="logo"></div>
+        <p>User Authentication</p>
+      </div>
+    </nav>
+    <aside>
+      <div class="company-det">
+        <div class="logo"></div>
+        <p>User Authentication</p>
+      </div>
+
+      <img src="img/Group 27065.svg" alt="illustration" />
+
+      <div class="other-det">
+        <p class="section-header">Manage and Assign tasks to your workers</p>
+        <p class="section-description">
+          Effortlessly delegate tasks and increase productivity with our task
+          management platform
+        </p>
+      </div>
+    </aside>
+    <main>
+      <div class="pop-up">
+        <div class="check-ctn">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <p>Successfully logged in</p>
+      </div>
+
+      <p class="main-header">Welcome Back</p>
+      <p class="main-description">Sign in to continue using User Authentication</p>
+
+      <form action="" id="form">
+        <div class="input-ctn">
+          <label for="e-mail">Email Address</label>
+          <input
+            type="text"
+            name="e-mail"
+            placeholder="Example@gmail.com"
+            class="email input"
+          />
+        </div>
+
+        <div class="input-ctn">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            class="input password"
+          />
+          <p class="error-msg"></p>
+        </div>
+
+        <input type="submit" value="LOGIN" class="submit-btn" />
+      </form>
+
+      <span>
+        <p
+          class="main-description"
+          style="margin-bottom: 0; width: fit-content"
+        >
+          Don't have an account?
+        </p>
+        <a href="/signup-page/index.html" class="special">Create one</a>
+      </span>
+
+      <p class="extra">© 2015–2023</p>
+    </main>
+  </body>
+</html>
