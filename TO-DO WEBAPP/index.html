@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   
+    <div class="container">
+	<div class="center">
+        <div class="button">
+            <span class="text">To-Do</span>
+        <span class="icon"><i class="fas fa-sort-down"></i></span>
+        </div>
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        <div class="field">
+            <input type="text" required placeholder="Add your new to-do">
+            <span class="add-btn">ADD</span>
+        </div>
+        <ul>
+            <li><span><i class="fas fa fa-trash"></i></span>Do Assignments</li>
+            <li><span><i class="fas fa fa-trash"></i></span>Attend a meeting</li>
+            <li><span><i class="fas fa fa-trash"></i></span>Read a book</li>
+            <li><span><i class="fas fa fa-trash"></i></span>Go to college</li>
+            <li><span><i class="fas fa fa-trash"></i></span>Take a sleep</li>
+        </ul>
+    </div>
+</div>
+	<script>
+        $('.add-btn').click(function(){
+    $('ul').append("<li><span><i class='fas fa fa-trash'></i></span>"+ $('input').val() +"</li>");
+    $('input').val("");
+});
+$('ul').on("click",'span',function(){
+    $(this).parent().fadeOut(500,function(){
+        $(this).remove();
+    });
+});
+$('.icon').click(function(){
+    $('.field').toggleClass("hide");
+});
+    </script>
+    <script src="script.js"></script>
+    <div class="resp"> <span> Oops!This will work in laptop only💀</span></div>
+</body>
+</html>
